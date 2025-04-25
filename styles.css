@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+.cabecera {
+    background-color: #FFD47A;
+    display: flex;
+    padding: 20px;
+  }   
+.cuadro-grande {
+    width: 100px;
+    height: 100px;
+    background-color: #FFC55C;
+    margin-right: 20px;
+  }
+.lineas-texto {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.linea {
+    height: 10px;
+    background-color: white;
+    margin: 5px 0;
+    width: 80%;
+  }
+.linea.corta {
+    width: 50%;
+  }
