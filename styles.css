@@ -19,6 +19,10 @@ body {
     flex-direction: column;
     justify-content: center;
   }
+.linea.naranja {
+    background-color: #FFB347; /* más oscuro */
+    width: 40%;
+}
 .linea {
     height: 10px;
     background-color: white;
@@ -28,3 +32,77 @@ body {
 .linea.corta {
     width: 50%;
   }
+.contenido {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+.fila {
+    display: flex;
+    gap: 20px;
+  }
+  .cuadro {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  .cuadro::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    background-color: rgba(255,255,255,0.3);
+  }
+  .cuadro.celeste {
+    background-color: #BDECEF;
+  }
+  
+  .cuadro.celeste::after {
+    background-color: #94D6DC;
+  }
+  .cuadro.rojo {
+    background-color: #FFA087;
+  }
+  
+  .cuadro.rojo::after {
+    background-color: #F97E5C;
+  }
+  .cuadro.amarillo {
+    background-color: #FFD86C;
+  }
+  
+  .cuadro.amarillo::after {
+    background-color: #FFBA3C;
+  }
+  .pie {
+    background-color: #eee;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .columna {
+    width: 30%;
+    background-color: #ddd;
+    padding: 20px;
+  }
+  .linea.gris {
+    height: 10px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.linea.blanca {
+    height: 10px;
+    background-color: white;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.linea.blanca.corta {
+    width: 50%;
+}
